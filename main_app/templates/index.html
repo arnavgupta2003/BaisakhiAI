@@ -24,47 +24,55 @@
 
 <body class = "main2oosh">
 	<div class ="container">
-	<nav class = "navbar py-3 p-5 navbar-expand-sm fixed-top navbar-dark bg-black">
-		<a href = "#" class = "d-inline-block align-top navbar-brand mb-0 h1">
-			<img src = "https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width = "30" height = "30"/>
-			Baisakhi.AI
+	<nav class = "navbar bg-dark text-black py-2 p-5 navbar-expand-sm fixed-top navbar-dark bg-black" >
+		<a href = "#" class = "d-inline-block  align-top navbar-brand font-weight-bold mb-0 fs-1">
+			<img src = "https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width = "30" height = "30" class  ="fs-5"/>
+			<strong>BAISAKHI.AI</strong>
 		</a>
 		<button type = "button" data-toggle="collaps" data-target = "#navbarNav" class ="navbar-toggler" aria-controls ="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class = "navbar-toggler-icon"></span></button>
-		<div class ="collapse navbar-collapse" id = "navbarNav">
-			<ul class = "navbar-nav">
-				<li class ="nav-item active">
-					<a href ="#" class  = "nav-link">Home</a>
+		<div class ="collapse navbar-collapse flex-d align-items-end justify-content-end" id = "navbarNav">
+			<ul class = "navbar-nav px-2">
+				<li class ="nav-item active  fs-4" >
+					<a href="#">
+    			<div class="hoverAnima mask nav-link"> Home</div>
+  					</a>
+
 				</li>
-				<li class ="nav-item dropdown">
-					<a href ="#" class  = "nav-link dropdown dropdown-toggle" id ="navbarDropdown" role ="button" data-bs-toggle ="dropdown" aria-expaned="false"> Features</a>
-					<ul class ="dropdown-menu" aria-labelledby ="navbarDropdown">
+				<li class ="nav-item fs-4 px-5 dropdown">
+					<a href ="#" class  = "hoverAnima nav-link dropdown dropdown-toggle" id ="navbarDropdown" role ="button" data-bs-toggle ="dropdown" aria-expaned="false"> Features</a>
+					<ul class ="bg-dark dropdown-menu" aria-labelledby ="navbarDropdown">
 						<li>
-							<a href ="#" class ="dropdown-item"> Feature 1</a>
+							<a href ="#" class ="dropdown-item text-white"> Feature 1</a>
 						</li>
 						<li>
-							<a href ="#" class ="dropdown-item"> Feature 2</a>
+							<a href ="#" class ="dropdown-item text-white"> Feature 2</a>
 						</li>
 						<li>
-							<a href ="#" class ="dropdown-item"> Feature 3</a>
+							<a href ="#" class ="dropdown-item text-white"> Feature 3</a>
 						</li>
 					</ul>
 				</li>
-				<li class ="nav-item dropdown">
-					<a href ="#" class  = "nav-link dropdown dropdown-toggle" id ="navbarDropdown" role ="button" data-bs-toggle ="dropdown" aria-expaned="false">Pricing</a>
-					<ul class ="dropdown-menu" aria-labelledby ="navbarDropdown">
+				<li class ="nav-item fs-4 dropdown">
+					<a href ="#" class  = " hoverAnima nav-link dropdown dropdown-toggle" id ="navbarDropdown" role ="button" data-bs-toggle ="dropdown" aria-expaned="false">Pricing</a>
+					<ul class ="dropdown-menu bg-dark" aria-labelledby ="navbarDropdown">
 						<li>
-							<a href ="#" class ="dropdown-item"> Feature 1</a>
+							<a href ="#" class ="dropdown-item text-white"> Pricing 1</a>
 						</li>
 						<li>
-							<a href ="#" class ="dropdown-item"> Feature 2</a>
+							<a href ="#" class ="dropdown-item text-white"> Pricing 2</a>
 						</li>
 						<li>
-							<a href ="#" class ="dropdown-item"> Feature 3</a>
+							<a href ="#" class ="dropdown-item text-white"> Pricing 3</a>
 						</li>
 					</ul>
 				</li>
+
 			</ul>
+			<div class ="mx-5 px-5 align-items-end">
+				<button type="button" class="btn btn-outline-info ml-5 px-5">Sign In</button>
+				<button type="button" class="btn bg-info btn-primary px-5">Sign Up</button>
+			</div>
 			
 		</div>
 	</nav>
@@ -109,7 +117,7 @@
 				</ul>
 			</div>
 		</div>
-		<form class="multisteps-form__form" id="wizard" method="GET">
+		<form class="multisteps-form__form text-black" id="wizard" method="GET">
 			<div class="form-area position-relative">
 				<!-- div 1 -->
 				<div class="multisteps-form__panel js-active" data-animation="slideHorz">
@@ -118,24 +126,60 @@
 							<div class="form-content pera-content">
 								<div class="step-inner-content container">
 									
-									<h2>Baisakhi Ai for your farming land</h2>
-									<p class ="text-white">Describe your soil and let us help with the rest.</p>
-									<div class="step-box">
-										<div class="row">
-											<div class="col-md-4">
+									<div class ="d-flex fs-1">
+										<h2>Welcome To  </h2>
+										<div class ="text-info fs-1 mx-4">
+											<h2>FARM-EASY</h2>
+										</div>
+										
+										
+									</div>
+									<div class ="d-flex">
+										<div class ="text-white fs-1">Harvest the Potential of </div>
+										<div class ="text-info mx-3 fs-1">
+											AI
+										</div>
+										
+									</div>
+									<p class ="text-white">Modernize Crop Selection and Profits Within Minutes </p>
+									
+									{% comment %} <p class ="text-white">Within Minutes </p> {% endcomment %}
+									<div class="step-box d-flex ">
+										<div class="row w-1000 gx-1 overflow-hidden d-flex ">
+											<div class="col-6 d-flex ml-auto p-5 justify-content-start">
 												<label class="step-box-content  text-center relative-position active">
 													<span class="step-box-icon">
-														<img src="{% static 'assets/img/try2.jpg' %}" alt="">
+														<img src="{% static 'assets/img/farmmm.gif' %}" alt="">
 													</span>
-													<span class="step-box-text">
-														Crop Choice and Yield Prediction
-													</span>
-													<span>Using NPK and other Environmental Factors</span>
+													
+													<p class=" text-white fs-2">
+														CROP CHOICE AND YIELD PRODUCTION
+												</p>
+													<span class = "fs-5">Using NPK and other Environmental Factors</span>
 													<span class="service-check-option">
 														<span><input id="condition0" type="radio" name="service_name" value="NPK Calculator" checked></span>
 													</span>
 												</label>
 											</div>
+
+											
+											
+											<div class="col-6 mr-auto p-5 align-self">
+												<label class="step-box-content  text-center relative-position active">
+													<span class="step-box-icon">
+														<img src="{% static 'assets/img/animal.gif' %}" alt="">
+													</span>
+													
+													<p class=" text-white fs-2">
+														ANIMAL HUSBANDARY PREDICTOR
+												</p>
+													<span class = "fs-5">Using farm area and overall environmental factors to calculate overall profits</span>
+													<span class="service-check-option">
+														<span><input id="condition0" type="radio" name="service_name" value="NPK Calculator" checked></span>
+													</span>
+												</label>
+											</div>
+											
 											
 											{% comment %} <div class="col-md-4">
 												<label class="step-box-content bg-white text-center relative-position">
@@ -204,7 +248,7 @@
 										<h2>Enter Soil Details</h2>
 										<p class ="text-white">Enter the Values of Nitrogen, Phosphorus and Potassium contents in your soil.</p>
 										<div class="form-inner-area">
-											<input type="number" name="nitrogen" class="form-control required" placeholder="Nitrogen *" required>
+											<input type="number" name="nitrogen" class="form-control required text-black" placeholder="Nitrogen *" required>
 											<input type="number" name="phosphorus" class="form-control required" placeholder="Phosphorus *" required>
 											<input type="number" name="potassium" class="form-control required" placeholder="Potassium *" required>
 											<!-- <input type="email" name="email" class="form-control required" placeholder="Email Address *" required>
@@ -226,9 +270,9 @@
 										<!-- </div> -->
 										<div class="language-select">
 											<label> <h4>Choose your State</h4></label>
-											<select name="state">
+											<select name="state" class = "text-black">
 												{% for city in states %}
-													<option value={{ forloop.counter0 }}>{{city}}</li>
+													<option class ="text-black" value={{ forloop.counter0 }}>{{city}}</li>
 												{% endfor %}
 											</select>
 											<br><br>
@@ -308,7 +352,15 @@
 										</div>
 									</div>
 									<div class="conditional" data-condition="true">
-										
+										{% comment %} <div class="language-select">
+											<label> <h4>Choose your Crop</h4></label>
+											<select name="crop">
+												{% for x in crops %}
+													<option value={{ forloop.counter0 }}>{{x}}</li>
+												{% endfor %}
+											</select>
+										</div> {% endcomment %}
+										<br><br>
 										<label> <h4>Crop Season</h4></label>
 										
 										<!-- <div class="services-select-option">

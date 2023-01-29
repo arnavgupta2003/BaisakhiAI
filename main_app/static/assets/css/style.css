@@ -7,11 +7,26 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
-  background: #000000;
-  color: #fde006;
+  background-image: linear-gradient(rgb(9, 24, 84), rgb(0, 0, 0));
+  color: #ececec;
+  animation: animate 15s ease infinite;
+  
   font-family: "Jost", sans-serif;
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 ::-moz-selection {
@@ -771,10 +786,11 @@ select.form-control option[value=""][disabled] {
 .step-inner-content {
   padding-bottom: 115px;
   border-bottom: 2px solid #dfdfdf;
+  font-size: larger;
 }
 
 .form-content .step-no {
-  font-size: 27px;
+  font-size: large;
 }
 
 .form-content .bottom-line {
@@ -782,7 +798,7 @@ select.form-control option[value=""][disabled] {
 }
 
 .form-content h2 {
-  font-size: 50px;
+  font-size: 85px;
   font-weight: 700;
   padding: 85px 0px 20px 0px;
 }
@@ -794,17 +810,20 @@ select.form-control option[value=""][disabled] {
 
 .step-box {
   padding-top: 70px;
+  
 }
 
 .step-box-content {
   cursor: pointer;
   border-radius: 8px;
   border: 2px solid #e1e1e1;
-  padding: 55px 20px 35px 20px;
+  padding: 55px 20px 35px 35px;
   display: block;
-  color:#000000;
+  color:#f1ebeb;
   min-height: 260px;
-  background-color: #e9bf00;
+  min-width:500px;
+  position:relative;
+  background-image: linear-gradient(rgb(14, 14, 14), rgb(8, 19, 85));
 }
 
 .step-box-content input {
@@ -884,7 +903,7 @@ select.form-control option[value=""][disabled] {
   padding-left: 30px;
   margin-bottom: 15px;
   border-radius: 3px;
-  border: 2px solid #ededed;
+  border: 2px solid #090808;
   -webkit-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -893,7 +912,7 @@ select.form-control option[value=""][disabled] {
 .form-inner-area input:focus {
   -webkit-box-shadow: 0px 5px 35px 0px rgba(107, 89, 211, 0.17);
   box-shadow: 0px 5px 35px 0px rgba(107, 89, 211, 0.17);
-  border: 2px solid #6b59d3;
+  border: 2px solid #000000;
 }
 
 .gender-selection {
@@ -901,7 +920,7 @@ select.form-control option[value=""][disabled] {
 }
 
 .gender-selection h3 {
-  color: #5f5f63;
+  color: #000000;
   font-size: 23px;
   font-weight: 700;
   padding-bottom: 6px;
@@ -986,7 +1005,7 @@ select.form-control option[value=""][disabled] {
 .services-select-option li {
   width: 100%;
   min-height: 65px;
-  color: #959595;
+  color: #000000;
   font-size: 17px;
   position: relative;
   padding-left: 80px;
@@ -1043,7 +1062,7 @@ select.form-control option[value=""][disabled] {
 }
 
 .language-select p {
-  color: #636363;
+  color: #000000;
   font-size: 18px;
   padding-bottom: 20px;
 }
@@ -1107,7 +1126,7 @@ select.form-control option[value=""][disabled] {
   display: inline-block;
   margin-right: 25px;
   font-size: 19px;
-  color: #5f5f63;
+  color: #000000;
   padding: 20px 20px 20px 60px;
   width: 33%;
   font-weight: 600;
@@ -1146,7 +1165,7 @@ select.form-control option[value=""][disabled] {
   line-height: 1;
   font-weight: 900;
   display: none;
-  color: #fff;
+  color: rgb(2, 2, 2);
   z-index: 1;
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -1354,6 +1373,12 @@ select.form-control option[value=""][disabled] {
   .budget-area .opti-list li:last-child {
     margin-right: 0;
   }
+}
+.hoverAnima:hover {
+  background-color: #08a9c6;
+  border-radius:10px;
+  min-width:10px;
+
 }
 
 @media screen and (max-width: 1199px) {

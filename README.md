@@ -7,6 +7,7 @@ conditions, taking into account factors such as water requirements, temperature 
 their crop selection and improve the chances of a successful harvest, ultimately increasing their profitability and sustainability.
 
 ### `Project Live at:`  [Replit](https://baisakhiai.arnagupta.repl.co/)
+#### `Datasets from:`  [fao](http://www.fao.org/statistics/databases/en/) ; [Kaggle](https://www.kaggle.com/)
 
 ## `Tech Stack`
 <ul>

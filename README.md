@@ -8,13 +8,13 @@
 ## Team Ctrl Z
 <ul>
   <li>
-    Divyansh Gaba (2nd Year IIIT-D)
+    Divyansh Gaba(CSAM) (2nd Year IIIT-D)
     </l1>
     <li>
-    Tanisha Bansal (1st Year IGDTUW)
+    Tanisha Bansal(CSAI) (1st Year IGDTUW)
     </l1>
     <li>
-    Arnav Gupta (2nd Year IIIT-D)
+    Arnav Gupta(CSAM) (2nd Year IIIT-D)
     </l1>
     </ul>
     

@@ -126,8 +126,13 @@ The system's features such as soil parameter input, crop recommendations, crop s
 In conclusion, Baisakhi AI has the potential to revolutionize the way farmers make decisions about their crops, by providing them with accurate and relevant recommendations. By optimizing crop selection, farmers can improve their profitability and sustainability, while reducing costs and labor. This can ultimately contribute to the sustainable development of the agricultural sector, benefiting farmers and society as a whole.
 </p>
 
-# Photos
+# Screenshots
+![ScreenShot 1](https://github.com/arnavgupta2003/BaisakhiAI/blob/2a52b91d15608cac7fee8e7f9ef8bf009cf6d2ac/s1.jpg)
 
+![ScreenShot 2](https://github.com/arnavgupta2003/BaisakhiAI/blob/2a52b91d15608cac7fee8e7f9ef8bf009cf6d2ac/s2.jpg)
 
+![ScreenShot 3](https://github.com/arnavgupta2003/BaisakhiAI/blob/2a52b91d15608cac7fee8e7f9ef8bf009cf6d2ac/s3.jpg)
+
+![ScreenShot 4](https://github.com/arnavgupta2003/BaisakhiAI/blob/2a52b91d15608cac7fee8e7f9ef8bf009cf6d2ac/s4.jpg)
 
 <p align=center> --- EOF --- </p>

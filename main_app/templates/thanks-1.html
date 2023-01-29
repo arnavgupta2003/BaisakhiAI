@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="{% static 'assets_ty/css/bootstrap.min.css' %}"
+      />
+      <link
+        rel="stylesheet"
+        href="{% static 'assets_ty/css/fontawesome-all.css' %}"
+      />
+      <link rel="stylesheet" href="{% static 'assets_ty/css/style.css' %}" />
+      <link
+        rel="shortcut icon"
+        type="image/png"
+        href="{% static 'assets_ty/favicon.ico' %}"
+      />
+    </head>
+    <body class = " bg-warning text-dark">
+      <div class ="container bg-dark">
+	<nav class = "navbar py-5 p-5 navbar-expand-sm fixed-top navbar-dark bg-dark">
+		<a href = "#" class = "d-inline-block align-top navbar-brand mb-0 h1">
+			<img src = "https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width = "30" height = "30"/>
+			Baisakhi.AI
+		</a>
+		<button type = "button" data-toggle="collaps" data-target = "#navbarNav" class ="navbar-toggler" aria-controls ="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class = "navbar-toggler-icon"></span></button>
+		<div class ="collapse navbar-collapse" id = "navbarNav">
+			<ul class = "navbar-nav">
+				<li class ="nav-item active">
+					<a href ="#" class  = "nav-link">Home</a>
+				</li>
+				<li class ="nav-item dropdown">
+					<a href ="#" class  = "nav-link dropdown dropdown-toggle" id ="navbarDropdown" role ="button" data-bs-toggle ="dropdown" aria-expaned="false"> Features</a>
+					<ul class ="dropdown-menu" aria-labelledby ="navbarDropdown">
+						<li>
+							<a href ="#" class ="dropdown-item"> Feature 1</a>
+						</li>
+						<li>
+							<a href ="#" class ="dropdown-item"> Feature 2</a>
+						</li>
+						<li>
+							<a href ="#" class ="dropdown-item"> Feature 3</a>
+						</li>
+					</ul>
+				</li>
+				<li class ="nav-item dropdown">
+					<a href ="#" class  = "nav-link dropdown dropdown-toggle" id ="navbarDropdown" role ="button" data-bs-toggle ="dropdown" aria-expaned="false">Pricing</a>
+					<ul class ="dropdown-menu" aria-labelledby ="navbarDropdown">
+						<li>
+							<a href ="#" class ="dropdown-item"> Feature 1</a>
+						</li>
+						<li>
+							<a href ="#" class ="dropdown-item"> Feature 2</a>
+						</li>
+						<li>
+							<a href ="#" class ="dropdown-item"> Feature 3</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	</nav>
+</div>
+      <!-- Start of thank you section
+ 	============================================= -->
+      <section id="thank-you" class="thank-you-section ">
+        <div class="container bg-dark text-white rounded ">
+          <div
+            class="thank-you-wrapper position-relative thank-wrapper-style-one"
+          >
+            <!-- <div class="thank-you-close text-center">x</div> -->
+            <div class="thank-txt text-center text-white">
+              <div class="thank-icon">
+                <img src="{% static 'assets_ty/img/try2.png' %}" height="500" width="500" alt="" />
+              </div>
+              <h1>
+                Crop Recommendation : {{crop_name}} 
+                <br/>Yield - {{yield}} Tonnes <br />
+                Net Production - {{netprod}} Tonnes
+              </h1>
+              <br />
+              
+              <p>Calculation Accuracy -> {{accuracy}}%</p>
+              {% if not isYield %}
+              <div class="container">
+                <div class"row">
+                <button
+                  class="btn btn-outline-primary btn-lg"
+                  onclick="connectWallet()">
+                
+                  Connect to Metamask
+                </button>
+              </div>
+              <br>
+              <div class"row">
+                <button
+                  class="btn btn-primary btn-lg"
+                  onclick="sendTransaction()"
+                >
+                  Buy the {{crop_name}}
+                </button>
+              </div>
+              </div>
+
+              <script>
+                async function connectWallet() {
+                  accounts = await window.ethereum
+                    .request({ method: "eth_requestAccounts" })
+                    .catch((err) => {
+                      console.log(err);
+                    });
+                }
+                async function sendTransaction() {
+                  let params = [
+                    {
+                      from: "0x552103E85b9b56D28b5E3bf6c61e59C9F03b01b9",
+                      to: "0xdc4583D5Bb820E2477648AbbB075060F76A8267e",
+                      gas: "0x76c0", // 30400
+                      gasPrice: "0x9184e72a000", // 10000000000000
+                      value: "0x9184e72a", // 2441406250
+                      data: "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675",
+                    },
+                  ];
+                  let result = await window.ethereum
+                    .request({ method: "eth_sendTransaction", params })
+                    .catch((err) => {
+                      console.log(err);
+                    });
+                }
+              </script>
+              {% endif %}
+              <br />
+              <a
+                class="d-block text-center text-uppercase"
+                href="{% url 'main_app:home' %}"
+                >Back to Home</a>
+            </div>
+            <div class="th-bottom-vector position-absolute">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of thank you section
+ 	============================================= -->
+
+      <script src="{% static 'assets_ty/js/jquery-3.3.1.min.js' %}"></script>
+      <script src="{% static 'assets_ty/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets_ty/js/main.js' %}"></script>
+    </body>
+  </html>
+</html>

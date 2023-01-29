@@ -20,9 +20,9 @@ their crop selection and improve the chances of a successful harvest, ultimately
   <li>HTML</li>
   <li>CSS</li>
   <li>BootStrap</li>
-  <li>Tailwind CSS</li>
   <li>Javascript</li>
-  <li>ReactJS</li>
+  <li>Polygon</li>
+  <li>Ethereum</li>
   
   
 </ul>  

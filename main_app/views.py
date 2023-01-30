@@ -53,7 +53,7 @@ reg_yeild = DecisionTreeRegressor(random_state = 42)
 reg_yeild.fit(X_train_yeild,y_train_yeild)
 ac_pred_yeild = reg_yeild.predict(X_test_yeild)
 r2_yeild = metrics.r2_score(y_test_yeild, ac_pred_yeild)
-
+ac_yeild = round(reg_yeild.score(X_test_yeild, y_test_yeild) * 100, 2)
 
 # Create your views here.
 def home(request):
@@ -79,7 +79,7 @@ def home(request):
             passThrough = {
                 'yield': round(final_pred_yeild[0], 3),
                 'crop_name':crop_name,
-                'accuracy': ac_crop,
+                'accuracy': (ac_crop + ac_yeild) / 2,
                 'netprod':round(float(dict['area']) * float(final_pred_yeild[0]))
             }
             return render(request, 'thanks-1.html', passThrough)
